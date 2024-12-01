@@ -18,10 +18,10 @@ with open('access.log') as log_file:
 
 # Вычисление статистики
 if response_times:
-    average_time: float = statistics.mean(response_times)  # pylint: disable=invalid-name
-    median_time: float = statistics.median(response_times) # pylint: disable=invalid-name
-    max_time: int = max(response_times)  # pylint: disable=invalid-name
-    min_time: int = min(response_times)  # pylint: disable=invalid-name
+    average_time: float = statistics.mean(response_times)
+    median_time: float = statistics.median(response_times)
+    max_time: int = max(response_times)
+    min_time: int = min(response_times)
 else: average_time = median_time = max_time = min_time = 0
 
 print(f"Среднее время ответа: {average_time}", "мс")
