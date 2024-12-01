@@ -11,7 +11,13 @@
 Проект разработан в соответствии с наилучшими практикантками.
 
 ## Интеграция в систему непрерывной интеграции (CI)
-На GitHub добавлен запуск flake8 после git push и pull_request
+Run flake8 .
+./HW1/parser.py:6:80: E501 line too long (168 > 79 characters)
+./HW1/parser.py:21:80: E501 line too long (89 > 79 characters)
+./HW1/parser.py:22:59: E261 at least two spaces before inline comment
+./HW1/parser.py:22:80: E501 line too long (89 > 79 characters)
+./HW1/parser.py:25:5: E701 multiple statements on one line (colon)
+Error: Process completed with exit code 1.
 
 ## Подключение линтеров
 (myenv) sokratov@sokratov:~/PROPYOTUS/HW1$ pylint parser.py
